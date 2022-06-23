@@ -3,10 +3,10 @@
     $resuult = $mysql->query("select * from users");
     $rows = $resuult->query();
    
-        $pdo = new PDO("mysql:host=127.0.0.1;dbname=test_b;port=3306","root","root");
+        // $pdo = new PDO("mysql:host=127.0.0.1;dbname=test_b;port=3306","root","root");
         $stmt = $pdo->query("select*from users");
         $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
+// this is testing
 ?>
 
 <!DOCTYPE html>
