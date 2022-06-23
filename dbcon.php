@@ -1,7 +1,7 @@
 <?php
-    // $mysql = new mysqli("127.0.0.1","root","root","test_b");
-    // $resuult = $mysql->query("select * from users where users.name="'drop database;.$_POST['name']);
-    // $rows = $resuult->query();
+    $mysql = new mysqli("127.0.0.1","root","root","test_b");
+    $resuult = $mysql->query("select * from users");
+    $rows = $resuult->query();
    
         $pdo = new PDO("mysql:host=127.0.0.1;dbname=test_b;port=3306","root","root");
         $stmt = $pdo->query("select*from users");
